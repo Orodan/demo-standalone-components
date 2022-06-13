@@ -12,11 +12,11 @@ const routes = [
 @NgModule({
   declarations: [
     GroupDetailComponent,
-    MyGoBackLinkComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MyGoBackLinkComponent
   ]
 })
 export class GroupDetailModule { }
