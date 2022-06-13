@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'group-detail/:name', loadChildren: () => import('./group-detail/group-detail.module').then(f => f.GroupDetailModule) }
+  { path: 'group-detail/:name', loadComponent: () => import('./group-detail/group-detail.component').then(f => f.GroupDetailComponent) }
 ];
 
 @NgModule({
