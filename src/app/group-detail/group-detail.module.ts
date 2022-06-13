@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { GroupDetailComponent } from './group-detail.component';
+import { MyGoBackLinkComponent } from './my-go-back-link/my-go-back-link.component';
 
 const routes = [
   { path: '', component: GroupDetailComponent }
@@ -10,7 +11,8 @@ const routes = [
 
 @NgModule({
   declarations: [
-    GroupDetailComponent
+    GroupDetailComponent,
+    MyGoBackLinkComponent
   ],
   imports: [
     CommonModule,
