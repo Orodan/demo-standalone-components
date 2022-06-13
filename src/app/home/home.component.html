@@ -1,0 +1,13 @@
+<main>
+  <mat-card *ngFor="let group of groups">
+    <mat-card-header>
+      <mat-card-title>{{ group.name }}</mat-card-title>
+    </mat-card-header>
+
+    <img mat-card-image [src]="group.image" alt="group image">
+
+    <mat-card-actions>
+      <a [routerLink]="['group-detail', group.name]" mat-button>Details</a>
+    </mat-card-actions>
+  </mat-card>
+</main>

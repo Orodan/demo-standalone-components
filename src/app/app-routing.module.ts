@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from './home/home.component'
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'group-detail/:name', loadChildren: () => import('./group-detail/group-detail.module').then(f => f.GroupDetailModule) }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

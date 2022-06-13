@@ -1,0 +1,11 @@
+<main *ngIf="group">
+  <h1>{{ group.name }}</h1>
+
+  <section>
+    <img [src]="group.image" alt="group image" />
+    <div>
+      {{ group.description }}
+      <a routerLink="">Go back</a>
+    </div>
+  </section>
+</main>
