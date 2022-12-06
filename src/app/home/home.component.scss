@@ -5,6 +5,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
-img {
+img { 
   background-size: cover;
+  width: 100%;
 }
